@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Вариант решения 1
+        // var n; var days = 0;
+        // n = +prompt("Сколько воды в баке(литр)?");
+        // while (n > 0) {
+        //     n -= 0.5;
+        //     if (n >= 10)
+        //         n -= 0.5;
+        //     days ++;
+        // }
+        // alert ("Вода в баке закончиться через " + days + " дней.");
+
+
+        // Вариант решения 2
+        var n; var days = 0;
+        n = +prompt("Сколько воды в баке(литр)?");
+        while (n > 0) {
+            days ++;
+            n -= 0.5;
+            if (n > 10)
+                continue;
+            n -= 0.5;
+        }
+        alert ("Вода в баке закончиться через " + days + " дней.");
+    </script>
+</body>
+</html>

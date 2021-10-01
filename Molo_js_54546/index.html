@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = prompt ("Введите название фигуры (треугольник, квадрат, пятиугольник):");
+        var n, sum = 0;
+        switch (str) {
+            case "треугольник":
+                n = +prompt ("Сколько сторон у треугольника?");
+                if (n == 3){
+                    alert ("Правильно! Теперь давайте посчитаем его периметр.");
+                    sum += +prompt ("Введите сторону треугольника:");
+                    sum += +prompt ("Введите сторону треугольника:");
+                    sum += +prompt ("Введите сторону треугольника:");
+                    alert ("Периметр вашей фигуры равен " + sum);
+                }
+                else 
+                    alert ("Вы не угадали! У треугольника 3 стороны.");
+                break;
+
+            case "квадрат":
+            n = +prompt ("Сколько сторон у квадрата?");
+                if (n == 4){
+                    alert ("Правильно! Теперь давайте посчитаем его периметр.");
+                    for (i = 0; i < 4; i++)
+                        sum += +prompt ("Введите одну из строн четырехугольника");
+                    alert ("Периметр четырехугольника равен " + sum);
+                }
+                else 
+                    alert ("Вы не угадали!");
+                break;
+
+            case "пятиугольник":
+            n = +prompt ("Сколько сторон у пятиугольника?");
+                if (n == 5){
+                    alert ("Правильно! Теперь давайте посчитаем его периметр.");
+                    for (i = 0; i < 5; i++)
+                        sum += +prompt ("Введите одну из строн пятиугольника");
+                    alert ("Периметр пятиугольника равен " + sum);
+                }
+                else 
+                    alert ("Вы не угадали!");
+                break;
+
+            default: alert ("Я не знаю такой фигуры.");
+        }
+
+    </script>
+</body>
+</html>
